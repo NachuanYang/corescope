@@ -1,0 +1,68 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+# Generated dependency and build output
+**/node_modules/
+**/dist/
+**/target/
+**/target-*/
+**/.venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+embedding-benchmark/cache/
+
+# Local credentials and environment overrides
+**/.env
+**/.env.*
+!**/.env.example
+
+# Large release installers are distributed separately
+release/**/*.exe
+release/**/*.msi
+
+# Local distribution archives and model weights (kept outside the source repository)
+release/**/*.zip
+release/**/*.exe.legacy
+**/embedding-benchmark/cache/
+
+# Public source repository scope
+/docs/
+/reference/
+/templates/
+/tools/
+/release/
+/promo/
+/README_FIRST.md
+/CODEX_START_PROMPT.md
+/ACCEPTANCE_CHECKLIST.md
+/CORESCOPE_V1_FINAL_DEVELOPMENT_SPEC.md
+/SHA256SUMS.txt
+/ui-preview.html
+/promotional_video_corescope.mp4
+/src-tauri/tests/auth_oauth_contract.rs
+/src-tauri/tests/fixtures/synthetic-rs256-private.pem
+**/src-tauri/gen/
