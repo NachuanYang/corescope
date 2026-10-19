@@ -1,0 +1,11 @@
+{
+  "simulated": true,
+  "inventory": {
+    "cpus": [], "gpus": [], "memory_modules": [],
+    "physical_disks": [
+      {"index":0,"model":"Samsung SSD 980 PRO 1TB","manufacturer":"Samsung","size_bytes":1000204886016,"serial_number":"SIM-SERIAL-A","pnp_id":"SCSI\\DISK&VEN_NVME&PROD_980PRO&LUN0"},
+      {"index":1,"model":"Samsung SSD 980 PRO 1TB","manufacturer":"Samsung","size_bytes":1000204886016,"serial_number":"SIM-SERIAL-B","pnp_id":"SCSI\\DISK&VEN_NVME&PROD_980PRO&LUN1"}
+    ],
+    "partitions": [], "volumes": [], "disk_partition_links": [], "partition_volume_links": [], "network_adapters": [], "pnp_nodes": [], "batteries": []
+  }
+}

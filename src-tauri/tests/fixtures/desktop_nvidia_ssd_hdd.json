@@ -1,0 +1,53 @@
+{
+  "simulated": true,
+  "inventory": {
+    "cpus": [{"name":"AMD Ryzen 7 7800X3D 8-Core Processor","manufacturer":"AuthenticAMD","identity_material":"SIM-CPU-7800X3D","pnp_id":"ACPI\\AuthenticAMD_-_AMD64_Family_25_Model_97","physical_cores":8,"logical_processors":16}],
+    "gpus": [
+      {"name":"NVIDIA GeForce RTX 4060","manufacturer":"NVIDIA","identity_material":"SIM-RTX4060","pnp_id":"PCI\\VEN_10DE&DEV_2882","virtual_hint":false},
+      {"name":"Oray Virtual Display Adapter","manufacturer":"Oray","identity_material":"SIM-ORAY-GPU","pnp_id":"ROOT\\ORAYDISPLAY","virtual_hint":true}
+    ],
+    "memory_modules": [
+      {"name":"DDR5 Module 1","manufacturer":"Kingston","capacity_bytes":17179869184,"identity_material":"SIM-RAM-1","pnp_id":"SMBIOS\\MEMORY1"},
+      {"name":"DDR5 Module 2","manufacturer":"Kingston","capacity_bytes":17179869184,"identity_material":"SIM-RAM-2","pnp_id":"SMBIOS\\MEMORY2"},
+      {"name":"DDR5 Module 3","manufacturer":"Kingston","capacity_bytes":17179869184,"identity_material":"SIM-RAM-3","pnp_id":"SMBIOS\\MEMORY3"},
+      {"name":"DDR5 Module 4","manufacturer":"Kingston","capacity_bytes":17179869184,"identity_material":"SIM-RAM-4","pnp_id":"SMBIOS\\MEMORY4"}
+    ],
+    "physical_disks": [
+      {"index":0,"model":"WD_BLACK SN770 1TB","manufacturer":"Western Digital","size_bytes":1000204886016,"serial_number":"SIM-SN770","pnp_id":"SCSI\\DISK&VEN_NVME&PROD_WD_BLACK_SN770"},
+      {"index":1,"model":"WD Blue SN580 1TB","manufacturer":"Western Digital","size_bytes":1000204886016,"serial_number":"SIM-SN580","pnp_id":"SCSI\\DISK&VEN_NVME&PROD_WD_BLUE_SN580"},
+      {"index":2,"model":"ST4000DM004 4TB","manufacturer":"Seagate","size_bytes":4000787030016,"serial_number":"SIM-ST4000","pnp_id":"SCSI\\DISK&VEN_ST4000"}
+    ],
+    "partitions": [
+      {"id":"SIM-PART-0-1","disk_index":0,"partition_number":1,"size_bytes":272629760,"name":"System Reserved"},
+      {"id":"SIM-PART-0-2","disk_index":0,"partition_number":2,"size_bytes":999747452928,"name":"Windows"},
+      {"id":"SIM-PART-1-1","disk_index":1,"partition_number":1,"size_bytes":1000204886016,"name":"Data"},
+      {"id":"SIM-PART-2-1","disk_index":2,"partition_number":1,"size_bytes":3999999999999,"name":"Archive"},
+      {"id":"SIM-PART-2-2","disk_index":2,"partition_number":2,"size_bytes":786432000,"name":"Recovery"}
+    ],
+    "volumes": [
+      {"id":"SIM-VOL-C","partition_id":"SIM-PART-0-2","drive_letter":"C:","label":"System","filesystem":"NTFS","size_bytes":999747452928},
+      {"id":"SIM-VOL-D","partition_id":"SIM-PART-1-1","drive_letter":"D:","label":"Work","filesystem":"NTFS","size_bytes":1000204886016},
+      {"id":"SIM-VOL-E","partition_id":"SIM-PART-2-1","drive_letter":"E:","label":"Archive","filesystem":"NTFS","size_bytes":3999999999999}
+    ],
+    "disk_partition_links": [
+      {"disk_index":0,"partition_id":"SIM-PART-0-1"}, {"disk_index":0,"partition_id":"SIM-PART-0-2"},
+      {"disk_index":1,"partition_id":"SIM-PART-1-1"},
+      {"disk_index":2,"partition_id":"SIM-PART-2-1"}, {"disk_index":2,"partition_id":"SIM-PART-2-2"}
+    ],
+    "partition_volume_links": [
+      {"partition_id":"SIM-PART-0-2","volume_id":"SIM-VOL-C"},
+      {"partition_id":"SIM-PART-1-1","volume_id":"SIM-VOL-D"},
+      {"partition_id":"SIM-PART-2-1","volume_id":"SIM-VOL-E"}
+    ],
+    "network_adapters": [
+      {"name":"Intel Ethernet Controller I225-V","manufacturer":"Intel","identity_material":"SIM-NIC-ETH","pnp_id":"PCI\\VEN_8086&DEV_15F3","physical_adapter":true},
+      {"name":"Intel Wi-Fi 6 AX200","manufacturer":"Intel","identity_material":"SIM-NIC-WIFI","pnp_id":"PCI\\VEN_8086&DEV_2723","physical_adapter":true}
+    ],
+    "pnp_nodes": [
+      {"instance_id":"SIM-PNP-AUDIO","name":"Realtek Audio Controller","class_name":"MEDIA","present":true},
+      {"instance_id":"SIM-PNP-CAMERA","name":"USB Camera","class_name":"IMAGE","present":true},
+      {"instance_id":"SIM-PNP-BT","name":"Bluetooth Device","class_name":"BLUETOOTH","present":true}
+    ],
+    "batteries": []
+  }
+}

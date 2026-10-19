@@ -1,0 +1,9 @@
+{
+  "simulated": true,
+  "inventory": {
+    "cpus": [{"name":"Intel Core i5-1235U","manufacturer":"Intel","identity_material":"SIM-CPU-I5","pnp_id":"ACPI\\GenuineIntel"}],
+    "gpus": [{"name":"Intel Iris Xe Graphics","manufacturer":"Intel","identity_material":"SIM-IGPU","pnp_id":"PCI\\VEN_8086&DEV_46A6","virtual_hint":false}],
+    "memory_modules": [], "physical_disks": [], "partitions": [], "volumes": [],
+    "disk_partition_links": [], "partition_volume_links": [], "network_adapters": [], "pnp_nodes": [], "batteries": []
+  }
+}
